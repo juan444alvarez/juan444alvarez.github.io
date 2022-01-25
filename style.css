@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: #eaeaea;
+    color: black;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    overflow: hidden;
+ }
+
+.container{
+    margin: 0 auto;
+    width: 85%;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links{
+    display: flex;
+    gap: 2.375rem;
+    list-style: none;
+}
+#linkedin-icon{
+    height: 1.3125rem;
+}
+
+#linkedin-icon, #drive{
+    cursor: alias;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.625rem 0;
+}
+#id-card{
+    z-index: 0;
+    margin-left: -255px;
+    height: 28.875rem;
+}
+.text{
+    background: transparent;
+    z-index: 1;
+    position: relative;
+    top: 290px;
+    right: 190px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .1875rem;
+}
+.cta{
+    font-size: 2.9375rem;
+    font-weight: 600;
+}
