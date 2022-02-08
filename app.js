@@ -3,3 +3,5 @@ tl.fromTo('.text', {opacity: 0}, {opacity: 1})
 tl.fromTo('.nav-header', {opacity: 0}, {opacity: 1}, '<')
 tl.fromTo('.id-card', {opacity: 0}, {opacity: 1})
 tl.fromTo('.footer', {opacity: 0}, {opacity: 1}, '<85%')
+
+//fade up

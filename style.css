@@ -29,11 +29,11 @@ body{
     gap: 2.375rem;
     list-style: none;
 }
-#linkedin-icon{
+.linkedin-icon{
     height: 1.3125rem;
 }
 
-#linkedin-icon, #drive{
+.linkedin-icon, .drive{
     cursor: alias;
 }
 
@@ -43,7 +43,7 @@ body{
     align-items: center;
     margin: 1.625rem 0;
 }
-#id-card{
+.id-card{
     z-index: 0;
     margin-left: -255px;
     height: 28.875rem;

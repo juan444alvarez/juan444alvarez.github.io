@@ -29,12 +29,12 @@ body{
     gap: 2.375rem;
     list-style: none;
 }
-#linkedin-icon{
+.linkedin-icon{
     height: 1.3125rem;
     fill: #eaeaea;
 }
 
-#linkedin-icon, #drive{
+.linkedin-icon, .drive{
     cursor: alias;
 }
 
