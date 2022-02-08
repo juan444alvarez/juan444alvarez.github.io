@@ -4,13 +4,17 @@
     box-sizing: border-box;
     font-family: sans-serif;
     background: #eaeaea;
-    color: #181818;
+    color: #202020;
     font-family: sans-serif;
 }
 
 body{
     height: 100%;
-    overflow: hidden;
+    width: 100%;
+ }
+
+ .wrapper{
+    overflow-y: hidden;
  }
 
 .container{
@@ -50,7 +54,7 @@ body{
     background: transparent;
     z-index: 1;
     position: relative;
-    top: 290px;
+    top: 300px;
     right: 210px;
 }
 
@@ -70,6 +74,6 @@ body{
 }
 
 a:hover{
-    color: #3b00df;
-    fill: #3b00df;
+    color: #5200ff;
+    fill: #5200ff;
 }

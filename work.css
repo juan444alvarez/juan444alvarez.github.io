@@ -10,7 +10,11 @@
 
 body{
     height: 100%;
-    overflow-x: hidden;
+    width: 100%;
+ }
+
+ .wrapper{
+     overflow-x: hidden;
  }
 
 .container{
@@ -37,8 +41,8 @@ body{
 }
 
 .marquee-container{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid #202020;
+    border-bottom: 1px solid #202020;
     display: flex;
 }
 
@@ -55,8 +59,8 @@ body{
     animation: marquee 22s infinite linear;
 }
 .marquee:hover a{
-    color: #3b00df;
-    fill: #3b00df;
+    color: #5200ff;
+    fill: #5200ff;
 }
 
 .description{
@@ -89,6 +93,6 @@ max-width: 50vw;
 }
 
 a:hover{
-    color: #3b00df;
-    fill: #3b00df;
+    color: #5200ff;
+    fill: #5200ff;
 }
