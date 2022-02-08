@@ -1,5 +1,0 @@
-const tl = gsap.timeline({defaults: {duration: 0.9, ease: "power2.out"}})
-tl.fromTo('.id-card', {opacity: 0}, {opacity: 1})
-tl.fromTo('.nav-header', {y: "-100%", opacity: 0}, {y: 0, opacity: 1})
-tl.fromTo('.text', {y: "100%", opacity: 0}, {y: 0, opacity: 1}, '<')
-tl.fromTo('.footer', {y: "100%", opacity: 0}, {y:0, opacity: 1}, '<')
