@@ -6,29 +6,38 @@
     background: #eaeaea;
     color: #202020;
     font-family: sans-serif;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #5200ff;
+    fill: #5200ff;
 }
 
 body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
  }
 
  .wrapper{
-    overflow-y: hidden;
+     overflow-x: hidden
  }
+
 
 .container{
     margin: 4rem auto;
-    width: 85%;
+    max-width: 85%;
+    max-height: 100%;
 }
 
 .nav-header{
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
 }
 .nav-links{
     display: flex;
-    gap: 2.375rem;
+    gap: 2.5rem;
     list-style: none;
 }
 .linkedin-icon{
@@ -41,39 +50,80 @@ body{
 
 .main-content{
     display: flex;
+    align-items: end;
     justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
+    margin-bottom: 6.5rem;
 }
+
 .id-card{
     z-index: 0;
-    margin-left: -272px;
-    max-height: 28.75rem;
-}
-.text{
-    background: transparent;
-    z-index: 1;
+    max-height: 61vh;
+    max-width: 100vw;
     position: relative;
-    top: 300px;
-    right: 210px;
+    left: 8rem;
+}
+
+.text{
+    z-index: 1;
+    background: transparent;
+    position: relative;
+    left: 6rem;
+    top: 4.9rem;
+}
+
+.work-link{
+    font-weight: 600;
+    margin-bottom: 1.75rem;
+    display: inline-block;
+}
+.marquee-container{
+    border-top: 1px solid #202020;
+    border-bottom: 1px solid #202020;
+    display: flex;
+}
+
+.marquee{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 1.75rem 0;
+}
+.marquee a{
+    text-decoration: none;
+    font-size: 2.625rem;
+    font-weight: 600;
+    animation: marquee 22s infinite linear;
+}
+.marquee:hover a{
+    color: #5200ff;
+    fill: #5200ff;
+}
+
+.description{
+padding: 2rem 0;
+line-height: 1.7;
+max-width: 75ch;
+}
+
+.link-out{
+    height: 2rem;
+    margin: 0 3rem;
+}
+
+
+@keyframes marquee{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
 }
 
 .footer{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: .0938rem
-}
-.cta{
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.copy{
-    background: transparent;
-}
-
-a:hover{
-    color: #5200ff;
-    fill: #5200ff;
+    margin-top: 2rem;
 }
