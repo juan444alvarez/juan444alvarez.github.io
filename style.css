@@ -12,6 +12,11 @@
 a:hover{
     color: #5200ff;
     fill: #5200ff;
+    transition: ease 0.5s;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -19,9 +24,8 @@ body{
  }
 
  .wrapper{
-     overflow-x: hidden
+     overflow-x: hidden;
  }
-
 
 .container{
     margin: 4rem auto;
@@ -35,11 +39,13 @@ body{
     font-weight: 600;
     margin-bottom: 2.5rem;
 }
+
 .nav-links{
     display: flex;
     gap: 2.5rem;
     list-style: none;
 }
+
 .linkedin-icon{
     height: 1.3125rem;
 }
@@ -97,6 +103,7 @@ body{
 .marquee:hover a{
     color: #5200ff;
     fill: #5200ff;
+    transition: ease 0.5s;
 }
 
 .description{
@@ -110,6 +117,13 @@ max-width: 75ch;
     margin: 0 3rem;
 }
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+
 
 @keyframes marquee{
     0%{
@@ -121,9 +135,27 @@ max-width: 75ch;
     }
 }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 2rem;
+@media(max-width: 40em){
+    .main-content{
+        margin-bottom: 3rem;
+    }
+    .text{
+        display: none;
+    }
+
+    .id-card{
+        left: 0rem;
+    }
+
+    .home-link{
+        display: none;
+    }
+
+    .nav-links{
+        gap: 2rem;
+    }
+
+    .footer{
+        align-items: center;
+    }
 }
