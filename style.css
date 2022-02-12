@@ -137,7 +137,7 @@ max-width: 75ch;
 
 @media(max-width: 40em){
     .main-content{
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     .text{
         display: none;
