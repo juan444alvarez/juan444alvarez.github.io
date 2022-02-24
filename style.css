@@ -31,8 +31,9 @@ body{
 
 .container{
     margin: 3.5rem auto;
-    max-width: 85%;
+    width: 85%;
     max-height: 100%;
+    max-width: 1440px;
 }
 
 .nav-header{
@@ -49,7 +50,7 @@ body{
 }
 
 .linkedin-icon{
-    height: 1.3125rem;
+    height: 1.3125rem; 
 }
 
 .linkedin-icon, .drive{
