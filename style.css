@@ -8,7 +8,9 @@
     font-family: sans-serif;
     text-decoration: none;
 }
-
+a{
+    font-size: 1.125rem;
+}
 a:hover{
     color: #5200ff;
     fill: #5200ff;
@@ -28,7 +30,7 @@ body{
  }
 
 .container{
-    margin: 4rem auto;
+    margin: 3.5rem auto;
     max-width: 85%;
     max-height: 100%;
 }
@@ -42,7 +44,7 @@ body{
 
 .nav-links{
     display: flex;
-    gap: 2.5rem;
+    gap: 3rem;
     list-style: none;
 }
 
@@ -63,7 +65,7 @@ body{
 
 .id-card{
     z-index: 0;
-    max-height: 61vh;
+    max-height: 60vh;
     max-width: 100vw;
     position: relative;
     left: 8rem;
@@ -74,7 +76,7 @@ body{
     background: transparent;
     position: relative;
     left: 6rem;
-    top: 4.9rem;
+    top: 5rem;
 }
 
 .work-link{
