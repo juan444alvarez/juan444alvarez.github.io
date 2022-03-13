@@ -31,7 +31,7 @@ a:hover{
 }
 
 .main-nav-section{
-    min-height: 11vh;
+    min-height: 10vh;
     display: grid;
     align-items: flex-end;
     margin-bottom: 2rem;
