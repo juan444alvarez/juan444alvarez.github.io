@@ -4,67 +4,64 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #fdf2e9;
 }
 
 h1{
     font-family: 'Merriweather', serif;
     font-size: 3.25rem;
+    color: #444;
     font-weight: 700;
     line-height: 1.4;
 }
 
 p{
     font-family: 'Lato', sans-serif;
-    color: #333;
+    color: #666;
+    font-size: 17px;
     line-height: 1.8;
 }
 
 a{
     font-family: "Lato";
     text-decoration: none;
-    color: #333;
+    color: #666;
 }
 
 .nav-header{
     height: 10vh;
-    background: #fdf2e9;
-    border-bottom: 1.5px solid #666;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 0 8.5rem;
+    border-bottom: 1.5px solid #666;
+    margin-bottom: 3.5rem;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav-links{
+.nav-link{
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
-.hero{
-    background: #fdf2e9;
-    padding: 4.5rem 0
-}
-
 .container{
     margin: 0 auto;
-    width: 82%;
-    max-width: 1440px;
+    width: 80%;
+    max-width: 1080px;
+}
 
-    display: grid;
-    grid-template: 1fr / repeat(2, 1fr);
-    align-items: top;
-    gap: 3rem;
+.cta{
+    width: 55%;
 }
 
 .content h1{
-    color: #333;
     margin-bottom: 1.5rem;
 }
 .content p{
-    max-width: 55ch;
     margin-bottom: 3rem;
 }
 
@@ -78,6 +75,7 @@ a{
     box-shadow: #d65c3e2c 0px 5px 10px 0px;
 
     font-weight: 900;
+    font-size: 1.125rem;
     margin-right: 1rem;
 }
 
@@ -112,9 +110,5 @@ a{
 
 .numbar span{
     color: #d65d3e;
-    font-size: 1.1875rem;
-}
-
-.cta-img-container img{
-    width: 100%;
+    font-size: 1.125rem;
 }
