@@ -6,6 +6,10 @@
     background: #eaeaea;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1{
     font-size: 40px;
     font-weight: 900;
@@ -22,7 +26,7 @@ a:hover{
 
 .container{
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     max-width: 1080px;
 }
 
@@ -69,7 +73,7 @@ a:hover{
 
 .id{
     position: relative;
-    right: -155px;
+    right: -180px;
     z-index: 0;
 }
 
@@ -86,6 +90,7 @@ a:hover{
     font-weight: 900;
     font-size: 1.1875rem;
     margin-bottom: 2rem;
+    text-decoration: none;
 }
 
 .projects{
@@ -109,7 +114,7 @@ a:hover{
     text-decoration: none;
     font-size: 3rem;
     font-weight: 600;
-    animation: marquee 15s infinite linear;
+    animation: marquee 20s infinite linear;
 }
 .marquee:hover a{
     color: #5200ff;
