@@ -178,8 +178,4 @@ a:hover{
     .nav-links{
         gap: 2rem;
     }
-
-    .marquee a{
-        color: #2a36b8;
-    }
 }
