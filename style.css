@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
     background: #eaeaea;
+    font-family: sans-serif;
 }
 
 html {
@@ -11,16 +13,16 @@ html {
 }
 
 h1{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
 a{
-    color: #2a36b8;
+    color: #333;
 }
 a:hover{
-    color: #5200ff;
-    fill: #5200ff;
+    color: #2a36b8;
+    fill: #2a36b8;
     transition: ease 0.5s;
 }
 
@@ -31,7 +33,7 @@ a:hover{
 }
 
 .main-nav-section{
-    min-height: 10vh;
+    min-height: 11vh;
     display: grid;
     align-items: flex-end;
     margin-bottom: 2rem;
@@ -43,22 +45,23 @@ a:hover{
 }
 .main-nav a{
     text-decoration: none;
-    font-weight: 900;
-    font-size: 1.1875rem;
+    font-weight: 800;
+    font-size: 1.125rem;
 }
 
 .nav-links{
     display: flex;
-    gap: 2.625rem;
+    align-items: center;
+    gap: 2.5rem;
     list-style: none;
 }
 
 .linkedin-icon{
     width: 1.3rem;
-    fill: #2a36b8;
+    fill: #444;
 }
 .linkedin-icon:hover{
-    fill: #5200ff;
+    fill: #2a36b8;
     transition: ease 0.5s;
 }
 
@@ -73,22 +76,23 @@ a:hover{
 
 .id{
     position: relative;
-    right: -150px;
+    right: -164px;
     z-index: 0;
 }
 
 .text{
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
+    color:#444;
     background: transparent;
     position: relative;
-    left: 115px;
+    left: 124px;
     z-index: 1;
 }
 
 .work-text-divider{
     display: inline-block;
-    font-weight: 900;
-    font-size: 1.1875rem;
+    font-weight: 800;
+    font-size: 1.125rem;
     margin-bottom: 2rem;
     text-decoration: none;
 }
@@ -99,8 +103,8 @@ a:hover{
 }
 
 .marquee-container{
-    border-top: 1px solid #202020;
-    border-bottom: 1px solid #202020;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
     display: flex;
 }
 
@@ -112,22 +116,24 @@ a:hover{
 }
 .marquee a{
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2.875rem;
     font-weight: 600;
     animation: marquee 20s infinite linear;
 }
 .marquee:hover a{
-    color: #5200ff;
-    fill: #5200ff;
+    color: #2a36b8;
+    fill: #2a36b8;
     transition: ease 0.5s;
 }
 
 .description{
-padding: 1.75rem 0;
-line-height: 1.8;
-max-width: 65ch;
-justify-content: flex-start;
-font-size: 1.125rem;
+    padding: 1.75rem 0;
+    line-height: 1.7;
+    max-width: 69ch;
+    justify-content: flex-start;
+    font-size: 1.0625rem;
+    color: #444;
+    text-transform: lowercase;
 }
 
 .link-out{
@@ -140,8 +146,10 @@ font-size: 1.125rem;
 .footer{
     display: flex;
     justify-content: flex-end;
-    font-size: 1rem;
+    font-size: 1.0625rem;
     margin-bottom: 2rem;
+    text-transform: lowercase;
+    color: #444;
 }
 
 @keyframes marquee{
@@ -169,5 +177,9 @@ font-size: 1.125rem;
 
     .nav-links{
         gap: 2rem;
+    }
+
+    .marquee a{
+        color: #2a36b8;
     }
 }
