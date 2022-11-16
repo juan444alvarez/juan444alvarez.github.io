@@ -1,6 +1,6 @@
 const tl = gsap.timeline({defaults: {duration: 1, ease: "power2.in"}})
 tl.fromTo('.id', {opacity: 0}, {opacity: 1, ease: "power2.out"})
-tl.fromTo('.main-nav-section', {opacity: 0}, {opacity: 1}, '<50%')
+tl.fromTo('.main-nav', {opacity: 0}, {opacity: 1}, '<50%')
 tl.fromTo('.text', {opacity: 0}, {opacity: 1}, '<')
 tl.fromTo('.work-text-divider', {opacity: 0}, {opacity: 1}, '<')
 tl.fromTo('.marquee-container', {opacity: 0}, {opacity: 1,}, '<')
