@@ -32,17 +32,14 @@ a:hover{
     max-width: 1080px;
 }
 
-.main-nav-section{
-    min-height: 11vh;
-    display: grid;
-    align-items: flex-end;
-    margin-bottom: 2rem;
-}
-
 .main-nav{
     display: flex;
     justify-content: space-between;
+    min-height: 11vh;
+    align-items: center;
+    margin-bottom: 2rem;
 }
+
 .main-nav a{
     text-decoration: none;
     font-weight: 800;
@@ -171,4 +168,9 @@ a:hover{
         right: 0px;
     }
 }
+
+@media(max-width: 500px){
+    .nav-links{
+        gap: 1.25rem;
+    }
 }
