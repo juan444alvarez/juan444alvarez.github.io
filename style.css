@@ -100,8 +100,8 @@ a:hover{
 }
 
 .marquee-container{
-    border-top: 1px solid #cfcfcf;
-    border-bottom: 1px solid #cfcfcf;
+    border-top: 1px solid #C7C7C7;
+    border-bottom: 1px solid #C7C7C7;
     display: flex;
 }
 
