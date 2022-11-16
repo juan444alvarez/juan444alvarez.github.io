@@ -113,6 +113,7 @@ a:hover{
 }
 .marquee a{
     text-decoration: none;
+    letter-spacing: -0.02em;
     font-size: 2.875rem;
     font-weight: 600;
     animation: marquee 20s infinite linear;
@@ -166,6 +167,10 @@ a:hover{
 
     .id{
         right: 0px;
+    }
+    
+    .marquee a{
+    color: #2a36b8;
     }
 }
 
