@@ -1,181 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     background: #eaeaea;
     font-family: sans-serif;
 }
 
-html {
+html{
     scroll-behavior: smooth;
 }
 
-h1{
-    font-size: 2.5rem;
-    font-weight: 900;
-}
-
-a{
-    color: #333;
-}
-a:hover{
-    color: #2a36b8;
-    fill: #2a36b8;
-    transition: ease 0.5s;
+.home-link-mobile{
+    display: none;
 }
 
 .container{
+    width: 70%;
+    max-width: 1920px;
     margin: 0 auto;
-    width: 85%;
-    max-width: 1080px;
 }
 
-.main-nav{
+.nav-container{
+    width: 70%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.nav{
     display: flex;
     justify-content: space-between;
-    min-height: 11vh;
     align-items: center;
-    margin-bottom: 2rem;
+    min-height: 13vh;
 }
 
-.main-nav a{
+.nav a, .work a{
     text-decoration: none;
     font-weight: 800;
     font-size: 1.125rem;
+    color: #333;
 }
 
-.nav-links{
+.blank-links{
+    list-style: none;
     display: flex;
     align-items: center;
-    gap: 2.5rem;
-    list-style: none;
-}
-
-.linkedin-icon{
-    width: 1.3rem;
-    fill: #444;
-}
-.linkedin-icon:hover{
-    fill: #2a36b8;
-    transition: ease 0.5s;
+    gap: 2em;
 }
 
 .hero{
-    margin-bottom: 2.5rem;
-}
-.hero-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.id{
-    position: relative;
-    right: -164px;
-    z-index: 0;
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    place-items: center;
+    overflow: hidden;
 }
 
 .text{
-    font-size: 1.0625rem;
-    color:#444;
     background: transparent;
-    position: relative;
-    left: 124px;
-    z-index: 1;
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+    transform: translate(94%, 36%);
 }
 
-.work-text-divider{
-    display: inline-block;
-    font-weight: 800;
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
-    text-decoration: none;
+.img{
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
 }
 
-.projects{
-    overflow-x: hidden;
-    margin-bottom: 3rem;
+.work{
+    padding: 2.5rem 0;
 }
 
-.marquee-container{
-    border-top: 1px solid #C7C7C7;
-    border-bottom: 1px solid #C7C7C7;
+.text-wrapper{
     display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
 }
 
-.marquee{
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    padding: 2rem 0;
-}
-.marquee a{
+.text-wrapper a{
     text-decoration: none;
     letter-spacing: -0.02em;
     font-size: 2.875rem;
     font-weight: 600;
-    animation: marquee 20s infinite linear;
-}
-.marquee:hover a{
-    color: #2a36b8;
-    fill: #2a36b8;
-    transition: ease 0.5s;
-}
-
-.description{
-    padding: 1.75rem 0;
-    line-height: 1.7;
-    max-width: 69ch;
-    justify-content: flex-start;
-    font-size: 1.0625rem;
-    color: #444;
-    text-transform: lowercase;
+    white-space: nowrap;
+    padding: 2.375rem 0rem;
+    animation: move-rtl 20s linear infinite;
+    color: #333;
 }
 
 .link-out{
     height: 2rem;
-    padding: 0 3rem;
-    color: #2a36b8;
-    fill: #2a36b8;
+    padding: 0 4rem;
+    fill: #333;
+}
+
+@keyframes move-rtl{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.description-content{
+    padding: 1.75rem 0;
+    line-height: 1.7;
+    max-width: 65ch;
+    font-size: 1.0625rem;
+    color: #444;
+    text-transform: lowercase;
 }
 
 .footer{
     display: flex;
     justify-content: flex-end;
     font-size: 1.0625rem;
-    margin-bottom: 3rem;
+    padding: 2.5rem 0;
     text-transform: lowercase;
     color: #444;
 }
 
-@keyframes marquee{
-    0%{
-        transform: translateX(0);
-    }
-
-    100%{
-        transform: translateX(-100%);
-    }
+.borderline{
+    height: 1px;
+    background: #C7C7C7;
 }
 
-@media(max-width: 716px){
-    .text{
+.icon-linkedin{
+    fill: #333;
+    height: 40px;
+    width: 40px;
+    margin-left: -4px;
+}
+
+@media(max-width: 550px){
+    .blank-links{
+        gap: 1.5rem;
+    }
+
+    .nav-container{
+        width: 80%;
+    }
+
+    .home-link-web{
         display: none;
     }
-
-    .id{
-        right: 0px;
+    .home-link-mobile{
+        display: inline-block;
     }
-    
-    .marquee a{
-    color: #2a36b8;
-    }
-}
 
-@media(max-width: 500px){
-    .nav-links{
-        gap: 1.25rem;
+    .icon-linkedin {
+        margin-left: -9px;
     }
 }
