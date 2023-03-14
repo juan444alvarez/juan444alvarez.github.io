@@ -3,16 +3,12 @@
     padding: 0;
     margin: 0;
     background: #eaeaea;
-    font-family: sans-serif;
+    font-family: monospace;
 }
 
 html{
     scroll-behavior: smooth;
 }
-
-a{
-    cursor: pointer;
- }
 
 .home-link-mobile{
     display: none;
@@ -48,7 +44,7 @@ a{
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 3em;
 }
 
 .hero{
@@ -64,7 +60,8 @@ a{
     display: grid;
     grid-row: 1;
     grid-column: 1;
-    transform: translate(94%, 36%);
+    transform: translate(85%, 36%);
+    line-height: 115%;
 }
 
 .img{
@@ -77,26 +74,29 @@ a{
     padding: 2.5rem 0;
 }
 
-.text-wrapper{
+.block-wrapper{
     display: flex;
     justify-content: flex-start;
     overflow: hidden;
+    padding: 2.5rem 0;
 }
 
-.text-wrapper a{
-    text-decoration: none;
+.link-block a{
     letter-spacing: -0.02em;
     font-size: 2.875rem;
     font-weight: 600;
-    white-space: nowrap;
-    padding: 2.375rem 0rem;
-    animation: move-rtl 20s linear infinite;
+    text-decoration: none;
     color: #333;
-}
+  }
+
+  .link-block{
+    white-space: nowrap;
+    animation: move-rtl 10s linear infinite;
+  }
 
 .link-out{
     height: 2rem;
-    padding: 0 4rem;
+    padding: 0 5rem;
     fill: #333;
 }
 
@@ -158,4 +158,21 @@ a{
     .icon-linkedin {
         margin-left: -9px;
     }
+}
+
+
+.icon-linkedin:hover{
+    fill: none;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+.text-wrapper:hover > *{
+    -webkit-text-stroke: 1.5px #333;
+    color: #eaeaea;
+}
+
+a:hover{
+    -webkit-text-stroke: 1px #333;
+    color: #eaeaea;
 }
