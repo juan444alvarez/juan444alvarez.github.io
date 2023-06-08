@@ -9,7 +9,7 @@ const letters = "012ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
 
-const elements = document.querySelectorAll("a");
+const elements = document.querySelectorAll(".random");
 
 for (let i = 0; i < elements.length; i++) {
   elements[i].onmouseover = event => {  
