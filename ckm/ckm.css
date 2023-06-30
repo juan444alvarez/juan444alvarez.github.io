@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: #444;
+}
+
+h2{
+    font-family: Roboto Mono;
+    color: #444;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+}
+h3{
+    font-family: Roboto Mono;
+    font-size: 1.25rem;
+    color: #444;
+    letter-spacing: -0.02em;
+    font-weight: 600;
+}
+
+.container75{
+    max-width: 1920px;
+    width: 75%;
+    margin: 0 auto;
+}
+.container100{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.gap-2-rem{
+    display: grid;
+    gap: 2rem;
+}
+
+.ch-60{
+    max-width: 60ch;
+}
+
+.hero{
+    padding: 5rem 0rem;
+}
+
+.title {
+    letter-spacing: -0.02em;
+    font-size: 2.875rem;
+    font-weight: 600;
+    font-family: 'Roboto Mono';
+    color: #0e2f81;
+    
+    background-image: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    background-size: 300%;
+    transition: background-position 1s;
+  }
+  
+.title:hover {
+    background-position: right;
+  }
+
+.subtext{
+    color: #999;
+}
+.subtext-sml{
+    color: #999;
+    font-size: .875rem;
+}
+
+.hero-details{
+    padding-bottom: 2.5rem;
+}
+
+.problem-statement{
+    padding: 4rem 0rem;
+}
+
+.original-entry{
+    gap: 1rem;
+    padding: 5rem 0rem;
+}
+
+.process{
+    padding-bottom: 5rem;
+}
+
+.step{
+    display: grid;
+    gap: 1rem;
+}
+
+.approach{
+    padding: 5rem 0rem;
+}
+
+@media(max-width: 990px){
+    .details{
+        display: grid;
+        gap: 1.875rem;
+    }
+}
+
+.grid{
+    --column-count: 1;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(var(--column-count), 1fr);
+}
+
+@media(width > 990px){
+    .grid { --column-count: 2}
+}
+
+.ch60{
+    max-width: 70ch;
+}
+
+:root {
+    --gradient: linear-gradient(90deg, #4098FF, #4058FF, #0e2f81);
+  
+  }
+  
+  .gradient {
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 7s infinite;
+  }
+  
+  @keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
+
+  .home-link-mobile{
+    display: none;
+}
+
+.nav-container{
+    width: 75%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 13vh;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    font-family: monospace;
+}
+
+.blank-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.icon-linkedin{
+    fill: #333;
+    height: 40px;
+    width: 40px;
+    margin-left: -4px;
+}
+
+@media(max-width: 550px){
+    .blank-links{
+        gap: 1.5rem;
+    }
+
+    .nav-container{
+        width: 80%;
+    }
+
+    .home-link-web{
+        display: none;
+    }
+    .home-link-mobile{
+        display: inline-block;
+    }
+
+    .icon-linkedin {
+        margin-left: -9px;
+    }
+}
+
+
+.icon-linkedin:hover{
+    fill: none;
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+.text-wrapper:hover > *{
+    -webkit-text-stroke: 1.5px #333;
+    color: #eaeaea;
+}
+
+a:hover{
+    -webkit-text-stroke: 1px #333;
+    color: #eaeaea;
+}
