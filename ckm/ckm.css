@@ -214,11 +214,16 @@ padding: 80px;
   border-top: #4058FF 2px solid;
   padding-top: 2rem;
   padding-bottom: 4rem;
+  gap: 2rem;
 }
 
 @media (max-width: 768px) {
   .desc-grid {
       grid-template-columns: 1fr;
+    }
+
+  .step-section{
+      padding-top: 4rem;
     }
 }
 
