@@ -86,13 +86,13 @@ p{
 .gradient {
   background-size: 300%;
   background-image: var(--gradient);
-  animation: bg-animation 7s infinite;
+  animation: bg-animation 6s infinite;
   border-radius: 8px;
 }
 .gradientw {
   background-size: 300%;
   background-image: var(--gradientw);
-  animation: bg-animation 7s infinite;
+  animation: bg-animation 6s infinite;
   border-radius: 8px;
 }
 
@@ -146,6 +146,10 @@ p{
   object-fit: cover;
   box-shadow: 0px 0px 16px 8px rgba(45, 55, 72, 0.20);
   border-radius: 7px;
+}
+
+.order-entry{
+  padding-bottom: 9rem;
 }
 
 .grid{
