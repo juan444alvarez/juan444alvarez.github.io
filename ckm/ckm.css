@@ -148,10 +148,6 @@ p{
   border-radius: 7px;
 }
 
-.order-entry{
-  padding-bottom: 9rem;
-}
-
 .grid{
   display: grid;
   gap: 1.25rem;
