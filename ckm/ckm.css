@@ -187,6 +187,7 @@ p{
   display: grid;
   gap: 1rem;
   padding-bottom: 6rem;
+  align-content: start;
 }
 
 @media (max-width: 768px) {
