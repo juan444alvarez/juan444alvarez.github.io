@@ -62,7 +62,7 @@
 
     <section class="problem">
         <div class="container">
-            <div class="problem-conten content">
+            <div class="content">
                 <h2>Problem Statement</h2>
                 <p class="text">The platform's user-base felt the outdated UI needed a refresh that would allow them to implement new features and screens for their current workflow. The client wanted to increase productivity of their users by by cutting bloated processes through a more consistent and scalable set of designs.</p>
             </div>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="step">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#4058FF" class="bi bi-2-circle" viewBox="0 0 16 16"><path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
-                    <p class="text">Map out the current platform architecture, identify vital screens to redesign, and map user flows.</p>
+                    <p class="text">Map out the platform architecture, identify vital screens to redesign, and map key user flows.</p>
                 </div>
                 <div class="step">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#4058FF" class="bi bi-3-circle" viewBox="0 0 16 16"><path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/></svg>
@@ -131,9 +131,9 @@
         </div>
     </section>
 
-    <section class="personas">
+    <section class="personas persona-padding">
         <div class="container step-grid">
-            <h3>Audience Types</h3>
+            <h3 class="subtext">Audience Types</h3>
 
             <div class="step-section">
                 <div class="step">
@@ -145,7 +145,7 @@
                               </svg>
                               <h3>Site Lead</h3>
                         </div>
-                        <p class="text">"If it's not on my list it's not happening."</p>
+                        <p class="text"><ins>"If it's not on my list it's not happening."</ins></p>
                     </div>
                     <p class="text">The Site Lead is usually the head of a maintenance dept. and reviews orders.</p>
                     <p class="text">Needs an easier way to create/organize for their team, to search content globally, and to have better awareness of updates to orders as they occur.</p>
@@ -160,7 +160,7 @@
                               </svg>
                               <h3>Staff</h3>
                         </div>
-                        <p class="text">"I get in and get out"</p>
+                        <p class="text"><ins>"I get in and get out."</ins></p>
                     </div>
                     <p class="text">Quickly references orders to see if everything matches records provided by site leads.</p>
                     <p class="text">Some workers will have edit access and may need to update key portions of tasks.</p>
@@ -168,6 +168,13 @@
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <h3 class="persona-padding subtext">User Flow</h3>
+        <div class="img-container">
+            <img class="img-flex" src="/img/flow.svg" alt="">
+        </div>
+    </div>
 
     <section class="problem">
         <div class="container">
@@ -182,6 +189,23 @@
         <div class="gradientw">
             <div class="img-container">
                 <img class="img-flex" src="/img/Key Takeaways.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="problem">
+        <div class="container">
+            <div class="content">
+                <h2>Design System</h2>
+                <p class="text">Using atomic design methodology, I created base elements with nested prototype interactions before moving onto more complex components like modals and tables. The design system also includes defined grids built around 8px spacing guidelines that translate to REM units in software development. This was done to influence consistent implementation with the developer, and once established, it expedited hand-off from design to development - cutting down time spent going over design specs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="gradientw">
+            <div class="img-container">
+                <img class="img-flex" src="/img/design system.png" alt="">
             </div>
         </div>
     </section>
