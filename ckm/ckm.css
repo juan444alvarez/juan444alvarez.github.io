@@ -306,3 +306,11 @@ a:hover{
   -webkit-text-stroke: 1px #333;
   color: #eaeaea;
 }
+
+.problem-conten{
+  padding-top: 6rem;
+}
+
+.persona-padding{
+  padding-bottom: 4rem;
+}
