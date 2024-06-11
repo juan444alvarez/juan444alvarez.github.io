@@ -81,6 +81,8 @@ window.onscroll = function () {
   updateProgress();
 };
 
+updateProgress();
+
 function updateProgress() {
   let scrollPosition =
     document.documentElement.scrollTop || document.body.scrollTop;
