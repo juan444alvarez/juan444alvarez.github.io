@@ -256,3 +256,21 @@ a:hover{
   -webkit-text-stroke: 1px #333;
   color: #eaeaea;
 }
+
+.nav-progress {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.progress-container {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.progress {
+  height: .3125rem;
+  background-color: #EF7627;
+}
