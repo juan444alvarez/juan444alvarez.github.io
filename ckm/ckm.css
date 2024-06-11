@@ -314,3 +314,21 @@ a:hover{
 .persona-padding{
   padding-bottom: 4.5rem;
 }
+
+.nav-progress {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.progress-container {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.progress {
+  height: .3125rem;
+  background-color: #4058FF;
+}
