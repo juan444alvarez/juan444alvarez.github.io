@@ -149,7 +149,7 @@ h2{
     border-bottom: 1px solid rgba(69, 69, 69, 0.5); /* Add this line for the hovered state */
 }
 
-.work.hovered .work-item#w-3{
+.work.hovered{
     border-bottom: none;
 }
 
