@@ -99,10 +99,6 @@ h2{
     border-bottom: 1px solid rgba(69, 69, 69, 0.5); /* Add this line to maintain the border on hover */
 }
 
-.work-item#w-3{
-    border-bottom: none;
-}
-
 .work-item-icon{
     position: relative;
     width: 70px;
