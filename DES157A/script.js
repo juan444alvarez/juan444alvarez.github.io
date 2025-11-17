@@ -66,8 +66,8 @@
         finalScrollY = targetCenterY;
     }
 
-    //ai to help me figure out linear interpolation for mouse movement and parallax effect 
-    //(not part of assignment reqs but I thought it would be a cool addition and experimentation with event.clientX/Y & window.inner )
+    //ai to help me figure out linear interpolation for mouse movement, parallax effect, and formulas for calculation.
+    //(not part of assignment reqs but I thought it would be a cool addition and experimentation with event.clientX/Y & window.inner)
     //also referenced https://processing.org/examples/interpolate.html
     function handleParallax(event) {
         const xPos = event.clientX;
