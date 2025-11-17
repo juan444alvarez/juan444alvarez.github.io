@@ -51,14 +51,16 @@
     let finalScrollX = 0;
     let finalScrollY = 0;
 
-    //originally tried to grab center of entire screen, but have to calc central image since "true center" is offset on grid.
     function calculateTargetCenter() {
         const centralImage = document.querySelector('.central-image');
+        //getting size and position of the elemnt relative to viewport
         const rect = centralImage.getBoundingClientRect();
 
+        //adding half the width of central-image to rect.left to get center
         const imageCenterX = rect.left + rect.width / 2;
         const imageCenterY = rect.top + rect.height / 2;
 
+        //originally tried to grab center of entire screen, but have to calc central image beforehand since "true center" is offset on grid.
         targetCenterX = window.scrollX + imageCenterX - window.innerWidth / 2;
         targetCenterY = window.scrollY + imageCenterY - window.innerHeight / 2;
 
@@ -102,7 +104,8 @@
     setTimeout(() => {
         calculateTargetCenter();
         window.scrollTo(targetCenterX, targetCenterY);
-        randomizeGrid(); 
+        randomizeGrid();
+        //repeating timer every 1.5 seconds to cycle through images and blend-modes
         setInterval(randomizeGrid, 1500);
         window.addEventListener('mousemove', handleParallax);               
         requestAnimationFrame(animateScroll);
